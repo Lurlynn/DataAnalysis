@@ -7,4 +7,8 @@ To Execute this program:
 Once these are done:
 1. Run the Elbow_Method.py script to find K
 2. Run the KmeansGeneration.py script for display the clusters
+3. Run the LinearReg_HelpfulScore.py to view Score versus Helpful
+4. Run the LinearReg_ScoreHelpful.py to view Helpful versus Score
+
+Note: The exploratory analysis data was used in excel to produce the graphs
 
