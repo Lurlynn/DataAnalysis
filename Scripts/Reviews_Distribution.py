@@ -93,15 +93,14 @@ def processDistribution():
     input_file.close()
 
     list_of_dics = [value for value in dct.values()]
-    list_of_dics2 = sorted(list_of_dics, key=lambda k: (k['asin'],k['overall']))
     print("Dictionary completed")
-    del(list_of_dics)
+    
     del(dct)
     
     #Finding Mode of each item
     f = lambda x: x['asin']
-    dct2 = {k: Counter(d['overall'] for d in g)for k, g in groupby(list_of_dics2, f)}
-
+    dct2 = {k: Counter(d['overall'] for d in g)for k, g in groupby(list_of_dics, f)}
+    del(list_of_dics)
 
     mean = 0
     multiple = 0
